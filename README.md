@@ -27,7 +27,13 @@ pykernsformer | Attention          | Formula | Citation       |
 You can also implement your own attention function with the following signature:
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+def attention_custom(query, key, value, mask=None, dropout=None):
+    
+    [...]
+    
+    p_attn = [...] # the attention matrix
+    
+    [...]
+
+    return torch.matmul(p_attn, value), p_attn
 ```
