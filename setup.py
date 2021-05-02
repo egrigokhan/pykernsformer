@@ -1,9 +1,8 @@
 import pathlib
 from setuptools import setup, find_packages
 
-VERSION = '0.0.3' 
-DESCRIPTION = 'Pytorch Kernel Transformer'
-LONG_DESCRIPTION = 'Kernel attention implementation of Pytorch TransformerEncoderLayer'
+VERSION = '0.0.4' 
+DESCRIPTION = 'Kernel attention implementation of Pytorch TransformerEncoderLayer'
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -22,7 +21,6 @@ setup(
         long_description=README,
         long_description_content_type="text/markdown",
         description=DESCRIPTION,
-        long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         install_requires=["torch",
                           "numpy"],
