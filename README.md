@@ -26,7 +26,7 @@ pykernsformer | Attention          | Formula | Citation       |
 
 You can also implement your own attention function with the following signature:
 
-```
+```python
 def attention_custom(query, key, value, mask=None, dropout=None):
     
     [...]
