@@ -24,3 +24,10 @@ pykernsformer | Attention          | Formula | Citation       |
 | `attention_LP` | Locally Periodic     | $softmax(-\frac{2\sin^2(\pi\frac{\sqrt{2 - 2\hat{q}_i\hat{k}_j^T}}{p})}{\sqrt{d_k}} + \frac{{q_i}{k_j^T}}{\sqrt{d_k}})V$ |                |
 | `attention_RQ` | Rational Quadratic | $\frac{\left( 1 + \frac{1}{\alpha \sqrt{d_k}} - \frac{2QK^T}{2 \alpha \sqrt{d_k}} \right)^{-\alpha}}{\sum_k \left( 1 + \frac{1}{\alpha \sqrt{d_k}} - \frac{2QK^T}{2 \alpha \sqrt{d_k}} \right)^{-\alpha}}V$ |                |
 
+You can also implement your own attention function with the following signature:
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
